@@ -2,7 +2,7 @@ from django.db import models
 
 
 class ProjectEmployee(models.Model):
-
+    ''' I've changed the project model ==> ProjectEmployee'''
 
     class Meta:
         verbose_name_plural = 'Project Employee'
