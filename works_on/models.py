@@ -8,5 +8,5 @@ class WorksOn(models.Model):
     Hours = models.CharField(max_length=250)
     
     #forignkey 
-    Pno  = models.ForeignKey("project_employee.Pnumber",on_delete=models.CASCADE)
-    Essn  = models.ForeignKey("employee.Ssn",on_delete=models.CASCADE)
+    Pno  = models.ForeignKey("project_employee.ProjectEmployee",on_delete=models.CASCADE)
+    Essn  = models.ForeignKey("employee.Employee",on_delete=models.CASCADE)
